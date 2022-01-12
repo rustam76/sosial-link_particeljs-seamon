@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  *{
+    padding: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+    background-color: black;
+  }
+    .kamu{
+      position: absolute;
+      background:#ffffff21;
+      color: white;
+      text-align: center;
+      border-radius: 12px;
+      width: 300px;
+      padding: 20px;
+    }
+    .imgs{
+      border-radius: 50px;
+      border: 2px solid blue;
+    }
+    .card{
+      margin-top: 20px;
+    }
+    .mt{
+      margin-top: 10px;
+    }
+   .mb{
+     margin: 0px;
+   }
+    .btn{
+      padding: 8px 17px;
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid blue;
+      transition: cubic-bezier(0.23, 1, 0.320, 1)
+      
+    }
+    .btn:hover{
+      background: bule;
+      border: 1px solid white
+    }
+   .bg{
+     background: #2927278f;
+   }
+  </style>
+</head>
+<body>
+  <div class="kamu">
+    <img src="https://lh3.googleusercontent.com/ogw/ADea4I4-Yw2cBhkUa2XVWTMbv7xCeJFTy46lEO_CcpoAMQ=s192-c-mo" alt="" width="100px" height="100px" class="imgs">
+  <h1 class="mb">Rustam</h1>
+  <p id="ketik"></p>
+  <div class="card">
+    <div class="mt">
+      <a href="" class="btn bg">Instagram</a>
+    </div>
+    <div class="mt">
+      <a href="" class="btn bg">Facebook</a>
+    </div>
+    <div class="mt">
+      <a href="" class="btn bg">YouTube</a>
+    </div>
+    <div class="mt">
+      <a href="" class="btn bg">Github</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div id=Partiles"">
+    
+  </div>
+  <script src="script.js"></script>
+  <script>
+    var i = 0 ,ketik;
+    text = "Saya adalah seorang programmer"
+    
+    function ketik(){
+      if (i < text.length){
+        document.getElementById("ketik").innerHTML
+        += text.charAt(i);
+        i++;
+        setTimeout(ketik,80);
+      }
+    }
+    ketik();
+    
+  </script>
+</body>
+</html>
